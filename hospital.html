@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CityCare Hospital - Appointment Form</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<header>
+    <h1>CityCare Hospital</h1>
+    <p>Book Your Appointment Online</p>
+</header>
+<hr>
+<main>
+<form>
+    <fieldset>
+        <legend><strong>Patient Information</strong></legend>
+        Full Name: <input type="text" name="fullname" required><br><br>
+        Date of Birth: <input type="date" name="dob"><br><br>
+        Age: <input type="number" name="age" min="0"><br><br>
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br><br>
+        Blood Group:
+        <select name="bloodgroup">
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><strong>Contact Details</strong></legend>
+        Phone Number: <input type="tel" name="phone"><br><br>
+        Email Address: <input type="email" name="email"><br><br>
+        Address:<br>
+        <textarea name="address" rows="4" cols="40"></textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><strong>Appointment Details</strong></legend>
+        Department:
+        <select name="department">
+            <option>General Medicine</option>
+            <option>Cardiology</option>
+            <option>Orthopedics</option>
+            <option>Dermatology</option>
+            <option>Pediatrics</option>
+        </select>
+        <br><br>
+        Preferred Doctor:
+        <input type="text" name="doctor"><br><br>
+        Appointment Date:
+        <input type="date" name="appointmentdate"><br><br>
+        Appointment Time:
+        <input type="time" name="appointmenttime"><br><br>
+        Type of Visit:
+        <input type="radio" name="visit"> New Patient
+        <input type="radio" name="visit"> Follow-up
+        <br><br>
+        Symptoms / Reason for Visit:<br>
+        <textarea name="symptoms" rows="4" cols="40"></textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><strong>Emergency Contact</strong></legend>
+        Contact Person Name: <input type="text" name="emergencyname"><br><br>
+        Relationship: <input type="text" name="relationship"><br><br>
+        Contact Number: <input type="tel" name="emergencynumber">
+    </fieldset>
+    <br>
+    <input type="submit" value="Confirm Appointment">
+    <input type="reset" value="Clear Form">
+</form>
+</main>
+</body>
+</html>
